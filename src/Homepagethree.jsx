@@ -3,6 +3,7 @@ import Image1container4 from "./images/Macbook.png";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import AddModeratorIcon from "@mui/icons-material/AddModerator";
 import "./homepagethree.css";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Homepagethree() {
   return (
@@ -11,8 +12,12 @@ function Homepagethree() {
         <img src={Image1container3} alt="a illustration content" />
         <div className="ContentContainerThree">
           <div className="navContainertThree">
+            <span>Startup 3</span>
+            <div className="navIconcon">
+            <MenuIcon className="navIcon"/>
+            </div>
+            <input type="checkbox" className="checkboxed"/>
             <div className="navLinks">
-              <span>Startup 3</span>
               <ul>
                 <li>tour</li>
                 <li>prices</li>
@@ -20,8 +25,6 @@ function Homepagethree() {
                 <li>F.A.Q</li>
                 <li>support</li>
               </ul>
-            </div>
-            <div className="buttonContainer">
               <button className="link">buy $38</button>
             </div>
           </div>
@@ -46,24 +49,32 @@ function Homepagethree() {
               </div>
               <div className="listBodyContent">
                 <div className="leftBodyContent">
-                  <SettingsSuggestIcon  className="icon"/>
+                  <SettingsSuggestIcon className="icon" />
                   <h3>Base on Bootstrap 4</h3>
                   <p>
-                    Lorem ipsum dolor sit amet<br/>
-                    consectetur adipisicing elit.<br/>
-                    Inventore ex rerum nesciunt<br/>
-                    culpa vitae? Velit iure<br/>
+                    Lorem ipsum dolor sit amet
+                    <br />
+                    consectetur adipisicing elit.
+                    <br />
+                    Inventore ex rerum nesciunt
+                    <br />
+                    culpa vitae? Velit iure
+                    <br />
                     eligendi,
                   </p>
                 </div>
                 <div className="rightBodyContent">
-                  <AddModeratorIcon className="icon"/>
-                  <h3>Base on Bootstrap 4</h3>
+                  <AddModeratorIcon className="icon" />
+                  <h3>Base on Bootstrap 6</h3>
                   <p>
-                    Lorem ipsum dolor sit amet<br/>
-                    consectetur adipisicing elit.<br/>
-                    Inventore ex rerum nesciunt<br/>
-                    culpa vitae? Velit iure<br/>
+                    Lorem ipsum dolor sit amet
+                    <br />
+                    consectetur adipisicing elit.
+                    <br />
+                    Inventore ex rerum nesciunt
+                    <br />
+                    culpa vitae? Velit iure
+                    <br />
                     eligendi,
                   </p>
                 </div>

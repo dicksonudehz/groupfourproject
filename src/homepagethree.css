@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
 .mainContainerThree {
   position: relative;
   display: flex;
@@ -37,6 +38,12 @@
   display: flex;
   width: 60%;
 }
+.navIconcon {
+  display: none;
+}
+.checkboxed {
+  display: none;
+}
 
 .link {
   padding: 10px 30px 10px 30px;
@@ -48,8 +55,9 @@
   font-weight: 500;
   text-transform: capitalize;
   background-color: #25dac5;
+  margin-left: 30px;
 }
-.navLinks span {
+.navContainertThree span {
   font-weight: 600;
   font-size: 20px;
   text-transform: capitalize;
@@ -160,7 +168,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-
   }
   .mainContainerThree {
     position: relative;
@@ -189,18 +196,66 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    position: relative;
     /* display: none; */
+  }
+  .navIconcon{
+    display: block;
+  }
+  .navIcon {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+  }
+  .checkboxed {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
+  }
+  .checkboxed:checked ~ .navLinks{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    float: right;
+    background-color: rgb(12, 12, 112);
+    width: 105%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    margin-top: 30px;
+    /* display: none; */
+    
   }
   .navLinks {
     display: flex;
-    width: 100%;
     /* background-color: red; */
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .buttonContainer {
+    align-items: flex-end;
+    justify-content: flex-end;
+    float: right;
+    background-color: rgb(12, 12, 112);
+    width: 105%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-bottom: 30px;
+    padding-right: 40px;
     margin-top: 30px;
+    display: none;
   }
+
   .link {
     padding: 10px 35px 10px 35px;
     border: none;
@@ -211,8 +266,9 @@
     font-weight: 600;
     text-transform: capitalize;
     background-color: #25dac5;
+    margin-top: 30px;
   }
-  .navLinks span {
+  .navContainertThree span {
     font-weight: 600;
     font-size: 20px;
     text-transform: capitalize;
@@ -221,7 +277,7 @@
   .navLinks ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
   }
   .navLinks ul li {
@@ -273,18 +329,19 @@
   }
   .listBodyContent {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* flex-direction: row; */
+    /* align-items: center; */
     justify-content: space-between;
     padding-top: 0px;
-    width: 100%;
+    width: 105%;
     padding-right: 20px;
     background-color: rgb(15, 15, 104);
     /* margin-left: -20px; */
     padding-left: 20px;
-    margin-top: 100px;
+    margin-top: 97px;
     padding-bottom: 50px;
     padding-top: 30px;
+    margin-left: -24px;
   }
   .leftBodyContent {
     display: flex;
@@ -332,13 +389,20 @@
   }
   .rightMainContent {
     background-color: rgb(15, 15, 104);
-    padding-left: 70px;
+    /* padding-left: 70px; */
+    width: 105%;
+    padding-left: 20px;
+    padding-top: 30px;
+    margin-left: -24px;
+    padding-left: 20px;
   }
+
   .rightMainContent img {
     width: 70%;
     object-fit: cover;
     float: right;
     margin-top: 40px;
-    display: none;
+    padding-bottom: 30px;
+    /* display: none; */
   }
 }
